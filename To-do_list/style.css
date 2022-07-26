@@ -1,0 +1,42 @@
+html{
+    background-color: lightcoral;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    background-color: yellow;
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.input_task{
+    padding:1%;
+    margin: 1%;
+    width: 80%;
+}
+
+.Add_button{
+    padding: 1%;
+    margin: 1%;
+    width: 15%;
+}
+
+.list_box{
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.list_box li{
+    border: 2px solid lightcoral;
+    width: 70%;
+    margin-top: 3%;
+    color: lightcoral;
+
+}
