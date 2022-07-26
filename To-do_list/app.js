@@ -1,12 +1,29 @@
 function newElement(){
+  var ol = document.querySelector(".list")
   var li = document.createElement('li');
+  var span = document.createElement('span')
+  
+  var del_button = document.createElement('button')
+  del_button.innerText = 'Delete 🗑'
+  del_button.className = 'delete_button'
+  del_button.onclick = function(){
+    ol.removeChild(this.parentElement);
+  };
+  
   var inputValue = document.querySelector(".input_task").value;
-  li.appendChild(document.createTextNode(inputValue));
+  span.appendChild(document.createTextNode(inputValue));
+
   if (inputValue === '') {
   alert("You must write something!");
   } else {
-  document.querySelector(".list").appendChild(li);
+
+  li.appendChild(del_button)
+  li.appendChild(span)
+  ol.appendChild(li);
+  
   document.querySelector(".input_task").value = ""
+
+  
 
   }
 }
@@ -18,3 +35,11 @@ document.querySelector("input").addEventListener("keydown", function(event) {
       newElement();
     }
   });
+
+var button = document.querySelector('.Add_button');
+
+button.onclick = function(){
+  newElement();
+};
+
+

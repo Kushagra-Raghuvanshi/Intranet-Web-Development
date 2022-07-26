@@ -4,6 +4,7 @@ html{
 
 h1{
     text-align: center;
+    color: yellow;
 }
 
 .container{
@@ -34,9 +35,23 @@ h1{
 }
 
 .list_box li{
-    border: 2px solid lightcoral;
-    width: 70%;
+    width: 90%;
     margin-top: 3%;
     color: lightcoral;
 
 }
+
+.list_box li span {
+    border: 2px solid lightcoral;
+    display: inline-block;
+    width: 80%;
+}
+
+.list_box li button{
+    display: flex;
+    color: red;
+    position: relative;
+    float: right;
+}
+
+
